@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    all: unset;
+}
+a:link {
+    text-decoration: none;
+    color: #3f464d;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #3f464d;
+}
+
+a:active {
+    text-decoration: none;
+    color: #3f464d;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #3f464d;
+    cursor: pointer;
+}
+
+.inner{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+     white-space: nowrap;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    line-height: 10px;
+}
+
+.head--container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.head--title{
+    font-weight: 900px;
+    font-size: 2rem;
+}
+
+.head--showinfo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    gap: 10px;
+    font-size: 15px;       
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    background-color:rgb(242,243,247);
+    margin-top: 4rem;
+    
+}
+
+.section--main--container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+.input--image{
+    border-radius: 100%;
+    
+}
+.section--title--container{
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    gap: 10px;
+        margin-bottom: 1.5rem;
+}
+.section--secondcontainer{
+    display: flex;
+
+    
+}
+.section--list--container{
+    width: 100%;
+    height: 100%;
+}
+
+
+.list--font{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.list--font--first{
+    display: flex;
+    gap: 10px;
+}
+.list--font--color{
+        border: 1px solid #5d6abf;
+    background-color: #5d6abf;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+}
+.list--font--second{
+    border: 1px solid #5d6abf;
+    background-color: #5d6abf;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 15px;
+    color: #fff;
+    padding: 5px 30px;
+
+}
+.list--visible{
+    border: 2px solid #fff;
+    background-color: #fff;
+    margin: 20px;
+    padding: 0.5rem;
+
+}
+
+.visible--title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem ;
+}
+
+.visible--second--title{
+    color: gray;
+    font-size: 10px;
+}
+
+.visible--skill{
+    display: flex;
+    color: #fff;
+    margin-top: 2px;
+    gap: 10px;
+    font-size: 10px;
+}
+
+.vs{
+width: 100%;
+    border: 1px solid #dfe8fc;
+    background-color: #dfe8fc;
+    width: 5rem;
+    font-size: 0.6rem;
+    color: black;
+    text-align: center;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+    text-align: center;
+    width: 100%;
+    height: 150px;
+    z-index: 1000;
+    line-height: 150px;
+}
+
+
+
+@media (min-width: 1200px) {
+    .inner{
+        max-width: 1200px;
+    }
+}
+
+
+
