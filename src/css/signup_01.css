@@ -1,6 +1,8 @@
 /* 조충희 6.9 */
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 /* 전체 */
@@ -51,6 +53,10 @@ header {
     font-size: 0.8rem;
 }
 
+.head--bottons:hover {
+    cursor: pointer;
+}
+
 /* 섹션 */
 section {
     width: 100%;
@@ -96,10 +102,13 @@ section {
     border: 1px solid slateblue;
     border-radius: 2rem;
 
-        text-align: center;
-        color: slateblue;
-        font-weight: bold;
+    text-align: center;
+    color: slateblue;
+    font-weight: bold;
 
+}
+.main--idduplicate:hover {
+    cursor: pointer;
 }
 
 .main--textcontainer {
@@ -117,7 +126,7 @@ section {
 
 .main--textinputbox {
     font-size: 0.8rem;
-    color: dimgray;
+    border-width: 0;
 
 }
 
@@ -128,13 +137,13 @@ section {
     background-color: slateblue;
     color: #fff;
     font-size: 1.2rem;
-
     text-align: center;
     line-height: 3rem;
-
     border-radius: 2rem;
 }
-
+.main--buttons:hover {
+    cursor: pointer;
+}
 
 /* 푸터 */
 footer {
