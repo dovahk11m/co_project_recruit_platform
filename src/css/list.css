@@ -44,10 +44,20 @@
     font-size: 1.6rem;
     font-weight: 500;
 }
+.header-left :hover {
+    color:#6069bd;
+    cursor: pointer;
+    transition: 0.2s;
+}
 
 .header-right {
     display: flex;
     gap: 10px;
+}
+.header-right :hover {
+    color:#6069bd;
+    transition: 0.2s;
+    cursor: pointer;
 }
 
 /* section css  */
@@ -85,6 +95,12 @@
     border-radius: 8px;
     padding: 0.8rem;
 }
+.list-img:hover{
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.5s;
+}
+
 
 .list-img {
     display: flex;
@@ -170,6 +186,7 @@
 }
 
 .btn button {
+    cursor: pointer;
     border: none;
 }
 
