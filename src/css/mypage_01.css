@@ -1,0 +1,211 @@
+/* 조충희 6.10 */
+
+/* 전체 */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f2f3f7;
+}
+
+a {
+    all: unset;
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* 헤더 */
+header {
+    width: 100%;
+    height: 5rem;
+    padding: 1rem;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #e5e4e2;
+}
+
+.head__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head--title {
+    font-size: 2rem;
+}
+
+.head--buttoncontainer {
+    display: flex;
+    gap: 1rem;
+}
+
+.head--buttons {
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.head--bottons:hover {
+    cursor: pointer;
+}
+
+/* 섹션 */
+/* 상부섹션 */
+section {
+    width: 100%;
+    height: 100%;
+
+}
+
+.top--container {
+    margin-top: 6rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.top--homebutton {
+    font-weight: bold;
+}
+
+.top--homebutton:hover {
+    cursor: pointer;
+}
+
+.top--container--lower {
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    align-items: center;
+    display: flex;
+    align-items: start;
+}
+
+.top--username {
+    border: 2px solid #5D6AC0;
+    border-radius: 2rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 3rem;
+}
+
+.top--userstatus {
+    margin-top: 1rem;
+
+    margin-left: 1rem;
+    text-decoration: underline;
+}
+
+/* 메인섹션 */
+.main--container {
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap
+}
+
+.input--image {
+    border-radius: 100%;
+
+}
+
+.main--right {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main--rightuppercontainer {
+    display: flex;
+}
+
+.main--rightuppertitle {
+    width: 8rem;
+    height: 2rem;
+    margin-left: 1rem;
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.main--rightcardcontainer {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.main--rightcard {
+    width: 12rem;
+    height: 10rem;
+    background-color: #5D6AC0;
+    margin-left: 1rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rightcard--title {
+    margin-top: 3rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.rightcard--content {
+    margin-top: 0.8rem;
+
+    color: #fff;
+    font-size: 0.8rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+/* 푸터 */
+footer {
+    width: 100%;
+    height: 10rem;
+
+    background-color: #e5e4e2;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.footer--message {
+    width: 100%;
+    height: 100%;
+    line-height: 10rem;
+
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+/* 미디어쿼리 사용 */
+@media (min-width: 1200px) {
+
+    /* 화면의 크기가 1200px보다 크면 */
+    .inner {
+        max-width: 1200px;
+    }
+}
