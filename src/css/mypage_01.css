@@ -9,6 +9,7 @@
 
 body {
     background-color: #f2f3f7;
+    color: #555555;
 }
 
 a {
@@ -88,21 +89,22 @@ section {
 .top--container--lower {
     margin-bottom: 1rem;
     margin-left: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #e5e4e2;
     align-items: center;
     display: flex;
     align-items: start;
 }
 
 .top--username {
-    border: 2px solid #5D6AC0;
+    border: 2px solid white;
     border-radius: 2rem;
     padding: 0.5rem 1.5rem;
-    font-size: 3rem;
+    font-size: 3.2rem;
 }
 
 .top--userstatus {
     margin-top: 1rem;
-
     margin-left: 1rem;
     text-decoration: underline;
 }
@@ -111,10 +113,12 @@ section {
 .main--container {
     display: flex;
     flex-direction: row;
-    white-space: nowrap
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e5e4e2;
 }
 
-.input--image {
+.main--inputimage {
     border-radius: 100%;
 
 }
@@ -136,24 +140,30 @@ section {
     margin-left: 1rem;
     text-align: center;
     line-height: 2rem;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: bold;
+    flex-shrink: 0
+}
+
+.main--rightuppertitle:hover {
+    cursor: pointer;
 }
 
 .main--rightcardcontainer {
     display: flex;
-    margin-top: 1rem;
+    margin-top: 1.6rem;
 }
 
 .main--rightcard {
-    width: 12rem;
-    height: 10rem;
-    background-color: #5D6AC0;
-    margin-left: 1rem;
+    width: 13rem;
+    height: 11rem;
+    background-color: #555555;
+    margin-left: 1.2rem;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-shrink: 0
 }
 
 .rightcard--title {
@@ -173,11 +183,84 @@ section {
     text-decoration: underline;
 }
 
+.rightcard--content:hover {
+    cursor: pointer;
+}
+
+/* 하단섹션 */
+.lower--container {
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.lower--upper--container {
+    display: flex;
+}
+
+.lower--lower--container {
+    display: flex;
+}
+
+.lower--leftcontainer {
+    display: flex;
+}
+
+.lower--leftcontainer:hover {
+    cursor: pointer;
+}
+
+.lower--inputimage {
+    border-radius: 1rem;
+
+}
+
+.leftcontainer--innerbox {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+
+.leftcontainer--title {
+    color: #555555;
+    font-weight: bold;
+}
+
+.leftcontainer--content {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #555555;
+}
 
 
 
+.lower--card {
+    width: 12rem;
+    height: 6rem;
+    margin-left: 1rem;
+    border: 2px solid #e5e4e2;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.lower--card:hover {
+    cursor: pointer;
+}
 
+.lowercard_title {
+    margin-top: 0.8rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555555;
+}
+
+.lowercard_content {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: #555555;
+}
 
 /* 푸터 */
 footer {
