@@ -137,10 +137,10 @@ section {
 }
 
 .main--rightuppertitle {
-    width: 8rem;
+
     height: 2rem;
-    margin-left: 1rem;
-    text-align: center;
+    margin: 0 1rem;
+
     line-height: 2rem;
     font-size: 1.6rem;
     font-weight: bold;
@@ -149,6 +149,8 @@ section {
 
 .main--rightuppertitle:hover {
     cursor: pointer;
+    color: #5189FA;
+
 }
 
 .main--rightcardcontainer {
@@ -360,6 +362,11 @@ footer {
 
     .top--username {
         font-size: 1.6rem;
+        padding: 0;
+    }
+
+    .top--userstatus {
+        margin-top: 0.5rem;
     }
 
     .main--inputimage {
