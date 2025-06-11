@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/nomalize.css">
-    <link rel="stylesheet" href="css/register.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/register.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <title>Document</title>
 </head>
 
@@ -32,11 +32,11 @@
         <div class="main--container">
             <div class="inner">
                 <div class="title--container">
+                    <div>
+                        <i class="fa-solid fa-arrow-left skill--icon"></i>
+                    </div>
                     <div class="title">
                         이력서 등록
-                    </div>
-                    <div class="skill">
-                        <i class="fa-solid fa-arrow-left skill--icon"></i>
                     </div>
                 </div>
                 <div class="title--form">
@@ -45,8 +45,8 @@
                     </div>
                     <hr>
                     <div class="title--form--inner">
-                        <div><i class="fa-solid fa-circle-user" style="font-size: 150px;"></i></div>
-                        <div class="title--user-info">
+                        <div><i class="fa-solid fa-circle-user user-image" style="font-size: 150px;"></i></div>
+                        <div class="title--user-info media--font">
                             <div class="title--form-name">
                                 <h2>홍길동</h2>
                             </div>
@@ -73,7 +73,7 @@
                     </div>
                     <div>
                         <div>
-                            <h3>개발 직무</h3>
+                            <h3 class="import">개발 직무</h3>
                             <div class="title--job">
                                 <label><input type="checkbox" name="job" value="server"> 서버 백엔드 개발자</label>
                                 <label><input type="checkbox" name="job" value="frontend"> 프론트 엔드 개발자</label>
@@ -84,8 +84,8 @@
                             </div>
                         </div>
                         <div class="title--class">
-                            <h3>기술스택(업무 툴/스킬)</h3>
-                            <div class="title--technology">
+                            <h3 class="import">기술스택(업무 툴/스킬)</h3>
+                            <div class="title--technology media--font">
                                 <label><input type="checkbox" name="skill" value="java"> Java</label>
                                 <label><input type="checkbox" name="skill" value="javascript"> JavaScript</label>
                                 <label><input type="checkbox" name="skill" value="spring"> Spring</label>
@@ -98,9 +98,9 @@
                                 <label><input type="checkbox" name="skill" value="oracle"> Oracle</label>
                             </div>
                         </div>
-                        <div class="title--history">
+                        <div class="title--history import">
                             <p class="history--name">경력</p>
-                            <div class="history--radio-inner">
+                            <div class="history--radio-inner media--font">
                                 <label class="history--radio-label"><input type="radio" name="career" value="신입">
                                     신입</label>
                                 <label><input type="radio" name="career" value="경력" checked> 경력</label>
@@ -108,7 +108,7 @@
                         </div>
                     </div>
                     <div class="button-container">
-                        <button class="save-button">저장하기</button>
+                        <button class="save-button media--font">저장하기</button>
                     </div>
                 </div>
     </section>

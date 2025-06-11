@@ -57,15 +57,11 @@ header {
     font-size: 0.7rem;
 }
 
-section {
-    width: 100%;
-}
 
 .title--container {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    align-items: center;
+    gap: 10px;
+    align-items: baseline;
 }
 
 .title {
@@ -153,12 +149,6 @@ h2 {
 h3 {
     padding-top: 10px;
     padding-bottom: 15px;
-}
-
-@media(min-width: 1200px) {
-    .inner {
-        max-width: 1200px;
-    }
 }
 
 .title--form-name {
@@ -286,4 +276,62 @@ footer {
     align-items: center;
     display: flex;
     justify-content: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 2560px) {
+    .inner {
+        max-width: 100%;
+    }
+
+    @media (max-width: 800px) {
+        .main--container {
+            width: 100%;
+        }
+
+        .skill input {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 650px) {
+        .user-image {
+            font-size: 100px !important;
+        }
+
+        .title--user-info {
+            font-size: 0.8rem;
+        }
+    }
+
+    @media (max-width: 425px) {
+        .user-image {
+            font-size: 70px !important;
+        }
+
+        .media--font {
+            font-size: 0.5rem;
+            gap: 11px !important;
+            width: 110%;
+        }
+
+        .import {
+            font-size: 0.7rem !important;
+        }
+
+        .title--job {
+            font-size: 0.5rem !important;
+        }
+
+        .title--technology {
+            padding: 0px;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 10px;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+    }
 }

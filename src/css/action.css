@@ -1,0 +1,121 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fc;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.subheading {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 200px;
+  background-color: #eaf0fb;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.tabs {
+  display: flex;
+  gap: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.tab {
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+
+.tab.active {
+  border-bottom: 2px solid #000;
+}
+
+.count {
+  background: #e3e5e8;
+  padding: 2px 6px;
+  border-radius: 12px;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 0;
+  color: #666;
+}
+
+.empty-state .icon {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.empty-state .empty-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.recommend-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0078ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.filters button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.banner {
+  background-color: #1f74e8;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.banner strong {
+  color: #fff;
+  font-weight: bold;
+}
+
+.banner .click {
+  text-decoration: underline;
+  cursor: pointer;
+}
