@@ -45,8 +45,9 @@
     font-size: 1.6rem;
     font-weight: 500;
 }
+
 .header-left :hover {
-    color:#6069bd;
+    color: #6069bd;
     cursor: pointer;
     transition: 0.2s;
 }
@@ -55,8 +56,9 @@
     display: flex;
     gap: 10px;
 }
+
 .header-right :hover {
-    color:#6069bd;
+    color: #6069bd;
     transition: 0.2s;
     cursor: pointer;
 }
@@ -69,32 +71,71 @@
     font-weight: 700;
     margin-bottom: 20px;
 }
+
 .list-number-all {
     border-bottom: 3px solid #6069bd;
     padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    padding: 0 2px 8px;
+    color: var(--gray80);
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
+    border-radius: 0;
+    background: var(--white);
 }
+
+.list-number-writing {
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    padding: 0 2px 8px;
+    color: var(--gray80);
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 28px;
+    border-radius: 0;
+    background: var(--white);
+}
+
 .number-font {
-    font-size: 1rem;
-    color:#6069bd;
-    
+    background: var(--gray100);
+    color: var(--white);
+
 }
-.number-size{
+
+.number-size {
     color: white;
-    line-height: 2px;
-    padding: 0px 7px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
     justify-content: center;
     background-color: #6069bd;
     border-radius: 50%;
+    position: relative;
+    font-size: 12px;
 }
 
- /* 지원 현황 background-color box */
+.number-size-inner {
+    position: relative;
+    /* 절대 위치 제거 */
+}
 
- .status-border-box {
+/* 지원 현황 background-color box */
+
+.status-border-box {
     display: flex;
     gap: 15px;
     margin-bottom: 30px;
- }
- .status-box-b1 {
+}
+
+.status-box-b1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -104,51 +145,60 @@
     font-weight: 700;
     background-color: #f4f6fa;
     height: 70px;
- }
- .status-font {
-    font-size: 0.8rem
- }
- .status-number {
-    font-size: 1.6rem;
- }
+}
 
- /* 해당 페이지 검색 select box 및 input 박스 */
- .search-select {
+.status-font {
+    font-size: 0.8rem
+}
+
+.status-number {
+    font-size: 1.6rem;
+}
+
+/* 해당 페이지 검색 select box 및 input 박스 */
+.search-select {
     display: flex;
     justify-content: end;
     gap: 10px;
-    padding-bottom:12px ;
+    padding-bottom: 12px;
     border-bottom: 1px solid #dcdee3;
     font-size: 0.8rem;
- }
- .search-box-size {
+}
+
+.search-box-size {
     padding: 5px;
- }
- .saerch-input {
+}
+
+.saerch-input {
     position: relative;
- }
- .search-input-btn {
+}
+
+.search-input-btn {
     transform: translateY(10px);
     right: 5px;
     position: absolute;
- }
- .search-input-btn:hover {
-    cursor: pointer;
- }
+}
 
- /* main content 부문  */
- .content-section {
+.search-input-btn:hover {
+    cursor: pointer;
+}
+
+/* main content 부문  */
+.content-section {
     text-align: center;
- }
- .content-section-inner {
+}
+
+.content-section-inner {
     padding: 72px 0 80px;
     border-bottom: 1px solid #ebedf2;
     color: #575d6d;
     text-align: center;
- }
+}
+
 .content-between-padding {
     padding: 10px 0 20px 0;
 }
+
 .wrap_p {
     display: block;
     padding-bottom: 4px;
@@ -156,6 +206,7 @@
     font-size: 18px;
     line-height: 32px;
 }
+
 .link_go {
     display: inline-block;
     position: relative;
@@ -170,14 +221,107 @@
     display: flex;
     justify-content: space-between;
     padding-top: 15px;
+    font-size: 12px;
+    margin-bottom: 100px;
 }
-.contetn-btn-left {
-    
-}
-.contetn-btn-left button ,.contetn-btn-right button{
+
+.contetn-btn-left {}
+
+.contetn-btn-left button,
+.contetn-btn-right button {
     border: 1px solid black;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 4px;
     background-color: white;
     padding: 5px 7px;
+}
+
+/* footer css 부문  */
+footer {
+    width: 100%;
+    background-color: #f2f4f5;
+}
+
+.footer {
+    height: 250px;
+    display: flex;
+    width: 800px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-inner {
+    text-align: center;
+    align-content: center;
+}
+
+@media all and (min-width : 320px) and (max-width : 768px) {
+    .inner {
+        max-width: 100%;
+    }
+
+    .section-container {
+        padding: 0 20px;
+    }
+
+    .list-inner {
+        width: 100% !important;
+    }
+
+    @media (max-width:430px) {
+        .header-left {
+            font-size: 1.2rem;
+        }
+
+        .header-right {
+            font-size: 0.8rem;
+        }
+    }
+
+    @media (max-width:370px) {
+        .header-left {
+            font-size: 1.0rem;
+        }
+
+        .header-right {
+            font-size: 0.6rem;
+        }
+    }
+}
+
+@media (max-width : 750px) {
+    .search-select {
+        font-size: 10px;
+    }
+
+    .search-box-size {
+        width: 100% !important;
+    }
+}
+
+@media (max-width : 675px) {
+    .search-select {
+        flex-direction: column;
+    }
+}
+
+@media (max-width : 450px) {
+    .status-number {
+        font-size: 12px;
+    }
+
+    .status-font {
+        font-size: 10px;
+    }
+}
+
+@media (min-width : 768px) {
+    .section-container {
+        padding: 0 20px;
+    }
+
+    .inner {
+        max-width: 100%;
+    }
 }
