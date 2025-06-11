@@ -1,72 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- css -->
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/signup_01.css" />
-    <!-- font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;0,700;0,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- 헤더 -->
-    <header>
-      <div class="inner">
-        <div class="head__container">
-          <div class="head--title">이력서 플랫폼</div>
-          <div class="head--buttoncontainer">
-            <div class="head--bottons" onclick="location.href='http://127.0.0.1:5501/src/signin_01.html';">로그인</div>
-            <div class="head--bottons" onclick="location.href='http://127.0.0.1:5501/src/signup_01.html';">회원가입</div>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- css -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/signup_01.css" />
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;0,700;0,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- 헤더 -->
+  <header>
+    <div class="inner">
+      <div class="head__container">
+        <div class="head--title">이력서 플랫폼</div>
+        <div class="head--buttoncontainer">
+          <div class="head--button" onclick="location.href='http://127.0.0.1:5501/signin_01.html';">로그인</div>
+          <div class="head--button" onclick="location.href='http://127.0.0.1:5501/signup_01.html';">회원가입</div>
         </div>
       </div>
-    </header>
-    <!-- 섹션 -->
-    <section>
-      <div class="inner">
-        <div class="main--container">
-          <div class="main--title">SIGN UP</div>
-          <div class="main--idcontainer">
-            <div class="main--idinnercontainer">
-              <div class="main--texttitle">아이디</div>
-              <input type="text" class="main--textinputbox" placeholder="아이디를 입력해주세요">
-              
-            </div>
-            <div class="main--idduplicate" onclick="location.href='https://www.naver.com';">중복확인</div>
-            
-          </div>
-          <div class="main--textcontainer">
-            <div class="main--texttitle">이름</div>
-            <input type="text" class="main--textinputbox" placeholder="이름을 입력해주세요">
-            <div class="main--textinputbox"></div>
-          </div>
-          <div class="main--textcontainer">
-            <div class="main--texttitle">비밀번호</div>
-              <input type="text" class="main--textinputbox" placeholder="비밀번호를 입력해주세요">
-          </div>
-          <div class="main--textcontainer">
-            <div class="main--texttitle">비밀번호 확인</div>
-                        <input type="text" class="main--textinputbox" placeholder="비밀번호를 입력해주세요">
+    </div>
+  </header>
+  <!-- 섹션 -->
+  <section>
+    <div class="inner">
+      <div class="main--container">
+        <div class="main--title">SIGN UP</div>
+        <div class="main--idcontainer">
+          <div class="main--idinnercontainer">
+            <div class="main--texttitle">아이디</div>
+            <input type="text" class="main--textinputbox" id="id--input" placeholder="아이디를 입력해주세요">
 
           </div>
-          <div class="main--buttons" onclick="location.href='https://www.naver.com';">회원가입</div>
+          <div class="main--idduplicate">중복확인</div>
+
         </div>
-      </div>
-    </section>
-    <!-- 푸터 -->
-    <footer>
-      <div class="inner">
-        <div class="footer--message">
-          Copyright(c)2024 홍길동 All rights reserved.
+        <div class="main--textcontainer">
+          <div class="main--texttitle">이름</div>
+          <input type="text" class="main--textinputbox" placeholder="이름을 입력해주세요">
+          <div class="main--textinputbox"></div>
         </div>
+        <div class="main--textcontainer">
+          <div class="main--texttitle">비밀번호</div>
+          <input type="text" class="main--textinputbox" placeholder="비밀번호를 입력해주세요">
+        </div>
+        <div class="main--textcontainer">
+          <div class="main--texttitle">비밀번호 확인</div>
+          <input type="text" class="main--textinputbox" placeholder="비밀번호를 입력해주세요">
+
+        </div>
+        <div class="main--button" onclick="location.href='http://127.0.0.1:5501/mainscreen.html';">회원가입</div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </section>
+  <!-- 푸터 -->
+  <footer>
+    <div class="inner">
+      <div class="footer--message">
+        Copyright(c)2024 홍길동 All rights reserved.
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
