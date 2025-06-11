@@ -31,6 +31,7 @@ a:hover {
 }
 
 .inner {
+  flex-grow: 2;
   width: 100%;
   height: 100%;
   margin: 0 auto;
@@ -39,6 +40,8 @@ a:hover {
 }
 
 .outer {
+  position: absolute;
+  right: 50px;
   margin-top: 6rem;
   justify-content: center;
   align-items: center;
@@ -406,24 +409,6 @@ input:focus {
   gap: 5px;
 }
 
-.right--two--one {
-  border: 1px solid #f3f4f8;
-  background-color: #f3f4f8;
-  border-radius: 15px;
-}
-
-.right--two--two {
-  border: 1px solid #f3f4f8;
-  background-color: #f3f4f8;
-  border-radius: 15px;
-}
-
-.right--two--three {
-  border: 1px solid #f3f4f8;
-  background-color: #f3f4f8;
-  border-radius: 15px;
-}
-
 .right--icon {
   padding: 2px;
   color: #00cc52;
@@ -436,7 +421,9 @@ input:focus {
 
 .right--two--one:hover,
 .right--two--two:hover,
-.right--two--three:hover {
+.right--two--three:hover,
+.right--two--four:hover ,
+.right--two--five:hover  {
   border: 1px solid #00cc52;
 }
 
@@ -558,7 +545,7 @@ background-color: #f7f7f7;
   }
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1320px) {
   .outer {
     display: none;
   }
