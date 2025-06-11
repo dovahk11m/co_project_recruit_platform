@@ -5,6 +5,10 @@
     margin: 0;
 }
 
+body {
+    color: #555555;
+}
+
 /* 전체 */
 a {
     all: unset;
@@ -48,12 +52,12 @@ header {
     gap: 1rem;
 }
 
-.head--buttons {
+.head--button {
     font-weight: bold;
     font-size: 0.8rem;
 }
 
-.head--bottons:hover {
+.head--button:hover {
     cursor: pointer;
 }
 
@@ -74,7 +78,8 @@ section {
 .main--title {
     font-size: 2rem;
     font-weight: bold;
-    padding: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
 }
 
 .main--idcontainer {
@@ -82,7 +87,7 @@ section {
     margin: 0.5rem;
 
     display: flex;
-    align-items: end;
+    align-items: center;
 }
 
 .main--idinnercontainer {
@@ -96,8 +101,10 @@ section {
 
 .main--idduplicate {
     width: 8rem;
-    margin-top: 1rem;
-    padding: 0.8rem 0;
+    height: 3rem;
+
+
+    line-height: 2.8rem;
 
     border: 1px solid #5D6AC0;
     border-radius: 2rem;
@@ -107,6 +114,7 @@ section {
     font-weight: bold;
 
 }
+
 .main--idduplicate:hover {
     cursor: pointer;
 }
@@ -117,10 +125,12 @@ section {
     padding: 0.8rem 0;
     border-bottom: 1px solid #e5e4e2;
     display: flex;
+
 }
 
 .main--texttitle {
     width: 7rem;
+    flex-shrink: 0;
 
 }
 
@@ -130,7 +140,7 @@ section {
 
 }
 
-.main--buttons {
+.main--button {
     width: 25rem;
     height: 3rem;
     margin: 2rem;
@@ -140,8 +150,10 @@ section {
     text-align: center;
     line-height: 3rem;
     border-radius: 2rem;
+    z-index: 1000;
 }
-.main--buttons:hover {
+
+.main--button:hover {
     cursor: pointer;
 }
 
@@ -175,4 +187,52 @@ footer {
     .inner {
         max-width: 1200px;
     }
+}
+
+@media (max-width: 768px) {
+
+    .head--title {
+        font-size: 1.6rem;
+    }
+
+    .main--title {
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+    }
+
+    .main--textcontainer {
+        width: 18rem;
+    }
+
+    #id--input {
+        width: 6rem;
+        text-overflow: ellipsis;
+    }
+
+
+    .main--button {
+        width: 18rem;
+
+    }
+
+    .main--idcontainer {
+        width: 18rem;
+    }
+
+    .main--idinnercontainer {
+        width: 12rem;
+        padding: 0.8rem 0;
+        margin-right: 1rem;
+        border-bottom: 1px solid #e5e4e2;
+        display: flex;
+
+    }
+
+    .main--idduplicate {
+        width: 6rem;
+        height: 2.2rem;
+        line-height: 2rem;
+        font-size: 0.8rem;
+    }
+
 }

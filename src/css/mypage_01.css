@@ -22,6 +22,7 @@ a {
     margin: 0 auto;
     padding: 0;
     overflow: hidden;
+    position: relative;
 }
 
 /* 헤더 */
@@ -80,7 +81,6 @@ section {
 .top--container--lower {
     margin-top: 6rem;
     margin-bottom: 1rem;
-    margin-left: 1rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid #e5e4e2;
     align-items: center;
@@ -91,7 +91,7 @@ section {
 .top--username {
 
     border-radius: 2rem;
-    padding: 0.5rem 1.5rem;
+    padding: 0.5rem 1rem;
     font-size: 3.2rem;
     font-weight: bold;
     flex-shrink: 0
@@ -389,6 +389,7 @@ footer {
         flex-direction: column;
         margin-top: 0;
         padding-bottom: 1rem;
+
     }
 
     .main--rightcardcontainer {
