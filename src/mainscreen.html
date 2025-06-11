@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="이력서플랫폼" />
+    <meta name="description" content="이력서 목록 시안" />
+    <meta name="keywords" content="Lecture" />
+    <meta name="author" content="Seungwon Jang" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+
+    <!-- 일반적인 fabicon 설정 -->
+    <!-- 1.  rel 속성 : <link> 태그에서 사용되며, 현재 문서와 연결된 리소스 간의 관계를 정의합니다. -->
+    <!-- 2.  xx.ico : 파비콘으로 주로 사용되는 이미지 파일 형식. -->
+    <link rel="icon" href="img/tencoding_fabicon.png" />
+    <!-- 아이폰용 fabicon 설정 -->
+    <link rel="apple-touch-icon" href="img/tencoding_fabicon.png" />
+
+    <!-- 인터넷 익스플러용 fabicon 설정-->
+    <link rel="short icon" type="image/x-icon" href="img/fun-coding.ico" />
+
+    <!-- CSS Reset(1), style.css, 아이콘 폰트, 웹페이지 사용 폰트 -->
+    <link rel="stylesheet" href="css/nomalize.css" />
+    <link rel="stylesheet" href="css/mainscreen.css" />
+
+    <!-- 폰트는 각 사용자 PC에 해당 폰트가 설치 되어 있어야 함 -->
+    <!-- 웹 폰트는 각 사용자의 PC에 폰트가 없어도 웹 브라우저에서 폰트를 
+     다운로드 받아서 웹 페이지가 표시 됨 -->
+    <!-- 첫 번째와 두 번째 <link> 태그: rel="preconnect"는 브라우저가 fonts.googleapis.com와 fonts.gstatic.com 
+     도메인에 미리 연결을 준비하도록 하여 폰트 로딩 속도를 최적화합니다. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;0,700;0,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- 레이아웃 틀 설정 -->
+    <!-- 항상 화면을 100% 로 사용하면, 와이드 스크린에서 웹페이지가 기대와 달리 보일 수 있음 -->
+    <!-- header 에 상단 메뉴까지 넣을 예정 -->
+
+    <!-- 전체 layout 는 시멘틱 태그로 구성하고,
+      각 layout component 는 width를 100% 로 하되,
+      해당 component 에 들어가는 요소들은 특정 가로 사이즈 이상에서는 특정 사이즈로 가운데에 정렬되도록,
+      inner 클래스로 감싸주기로 함
+      각 하부 요소 배치를 위해서는 각 layout 별 container 로 정의해주기로 함
+    -->
+    <title>이력서 플랫폼</title>
+    <!-- 제일 위쪽 헤드 -->
+  </head>
+  <body>
+    <header style="border-bottom: #ebeaeb;">
+      <div class="inner">
+        <div class="head--topcontainer">
+          <div class="head--title--contianer">
+            <div class="head--title">Humanist</div>
+            <input type="text" placeholder="Search">
+          </div>
+          <div class="head--showinfo">
+            <a href="http://127.0.0.1:5501/src/signup_01.html">로그인</a>
+            <div style="color: #5d6ac0;">|</div>
+            <a href="http://127.0.0.1:5501/src/signin_01.html">회원가입</a>
+          </div>
+        </div>
+            <div class="head--bottomcontainer">
+                <div class="list--left">
+                <div class="Information--special"><i class="fa-solid fa-list-ul"></i></div>
+                <div class="Information"onclick="location.href='https://127.0.0.1:5501/src/signin_01.html';">채용정보</div>
+                <div class="Information"onclick="location.href='https://127.0.0.1:5501/src/signin_01.html';">취업축하금</div>
+                <div class="Information"onclick="location.href='https://127.0.0.1:5501/src/signin_01.html';">신입·인턴</div>
+                <div class="Information"onclick="location.href='https://127.0.0.1:5501/src/signin_01.html';">합격전략</div>
+                <div class="Information"onclick="location.href='https://127.0.0.1:5501/src/signin_01.html';">기업·연봉</div>
+                <div class="Information"onclick="location.href='https://127.0.0.1:5501/src/signin_01.html';">커리어성장</div>
+                <div class="Information"onclick="location.href='https://127.0.0.1:5501/src/signin_01.html';">커뮤니티</div>
+                </div>
+                <div class="list--right">
+                <a href="https://www.16personalitylab.com/home?lang=KR&aid=29&gad_source=1&gad_campaignid=22201791748&gbraid=0AAAAA97Cn6PMwr-ZZ1pVtdpkZuyjN4KSd&gclid=Cj0KCQjwjJrCBhCXARIsAI5x66WvFbXPlnrQj583Tpq0uCqhLee3Q0kTAgTKofmgqt5mZO9ri6pkxVkaAhHOEALw_wcB" style="color: #5d6ac0;;">나의 성향파악하기</a>
+                </div>
+            </div>
+      </div>
+    </header>
+    <section class="top--section">
+        <div class="inner">
+            <div class="main--topcontainer">
+                <div class="left--container">
+                    <div class="left--decorate--one">
+                        <i class="fa-solid fa-flag"></i>
+                        <div class="left--one">
+                            <div class="left--one--first">
+                                <div class="left--one--first--1">비장의 합격 카드 뽑기</div>
+                                <div class="left--one--first--">버닝 타임</div>
+                            </div>
+                            <div class="left--one--secod">합격 진적! 카드 한장으로 마무리해요!</div>
+                        </div>
+                    </div>
+                    <div class="left--decorate--two">
+                        <div class="left--two">
+                            <div class="left--two--one" style="color:red;"><i class="fa-solid fa-gift"></i></div>
+                            <div class="left--two--two"style="color:green;"><i class="fa-solid fa-gift"></i></div>
+                            <div class="left--two--three"style="color:blue;"><i class="fa-solid fa-gift"></i></div>
+                        </div>
+                    </div>
+                    <div class="left--decorate--three">
+                        <div class="left--three">
+                            <div class="left--three--one" style="color: #0cc8ff;"><i class="fa-solid fa-icons"></i></div>
+                            <div class="left--three--two">인적성검사</div>
+                            <div class="left--three--three">서류합결률 UP</div>
+                        </div>
+                    </div>
+                    <div class="left--decorate--four">
+                            <div class="left--four">
+                            <div class="left--four--one" style="color: #2469ff"><i class="fa-solid fa-snowflake"></i></div>
+                            <div class="left--four--two">외국인 채용은</div>
+                            <div class="left--four--three">KoMate</div>
+                            <div class="left--four--four"style="color: #a3bcff;">></div>
+                        </div>
+                    </div>
+                    <div class="left--decorate--five">
+                            <div class="left--five">
+                            <div class="left--five--one" style="color: #30d973"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="left--five--two">커리어 마일리지를 쌓는</div>
+                            <div class="left--five--three">포지션 제안</div>
+                            <div class="left--five--four" style="color: #a3bcff;">></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="center--container">
+                    <div class="center--decorate--one">
+                      <div class="center--one">
+                        <div class="center--one--one">
+                          <div class="center--icon1" style="color: #ff7a72;"><i class="fa-solid fa-heart"></i></div>
+                          <div class="center--text">회원님을 위한 추천공고</div>
+                        </div>
+                        <div class="center--one--two">
+                          <div class="center--icon2" style="color: #ff7a72;"><i class="fa-solid fa-fire"></i></div>
+                          <div class="center--text">지금 핫한 대기업 공고</div>
+                        </div>
+                        <div class="center--one--three">
+                          <div class="center--icon3" style="color: #ff7a72;"><i class="fa-solid fa-building"></i></div>
+                          <div class="center--text">공사·공기업 공고</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="center--decorate--two">
+                      <button class="center--card--list"onclick="location.href='https://www.saramin.co.kr/zf_user/jobs/relay/view?isMypage=no&rec_idx=50985268&recommend_ids=eJxVz7ENxUAIA9Bp0h9gMK4zyN9%2Fix%2BlOC7lk5FscilJ8NdmF%2B9c7ebAppxyGwLgHMcKlza50FWbFURP2qi0HlJVwwwznkXtmFQ0xLkK0ByDT%2FesYog6aGR8XuCx6uVb9Ack%2FTm0&view_type=list&gz=1&t_ref_content=major_company&t_ref=main&t_category=relay_view&relayNonce=347b3084ae0d02001bf0&immediately_apply_layer_open=n#seq=0';">
+                        <div class="company--icon"><img src="https://pds.saramin.co.kr/company/logo/202105/12/qsz0ke_8l9x-g6qztr_logo.png" class="img" alt="" loading="lazy"></div>
+                        <div class="company--announcement">(주)진성티이씨 <br>생산직(생산 , 품질, 자재)</div>
+                        <div class="company--name">(주)진성티이씨</div>
+                      </button>
+                      <button class="center--card--list"onclick="location.href='https://www.saramin.co.kr/zf_user/company-info/view?csn=UWtLRDBKS2NTV1JUcXVuOUN0RURvdz09';">
+                        <div class="company--icon"><img src="https://pds.saramin.co.kr/company/logo/201903/08/po1ej7_zewx-g6qztz_logo.jpg" class="img" alt="" loading="lazy"></div>
+                        <div class="company--announcement">생산직 사원 모집</div>
+                        <div class="company--name">현대트랙시스(주)</div>
+                      </button>
+                      <button class="center--card--list"onclick="location.href='https://www.saramin.co.kr/zf_user/jobs/relay/view?isMypage=no&rec_idx=50976008&recommend_ids=eJxNkMsNA0EMQqvJfezBBs4pZPvvIhtFWc%2FxCfERtVwkeCnixXfdaKIvr%2FwhAB4qAxsPlugVozqj9%2BPlgrofldiOQUu5NUXRDE1yFTXYMlWDd217kitD%2F2RYkYUZedcA4xXMPjYn4AND1ecbhcovfgBpLUBF&view_type=search&searchword=snow&searchType=search&gz=1&t_ref_content=generic&t_ref=search&relayNonce=3ab3bd70a63a7a09cf9e&paid_fl=n&search_uuid=86f1414a-7a65-44a9-9408-dc91bf4e2cda&immediately_apply_layer_open=n#seq=0';">
+                        <div class="company--icon"><img src="https://webpds.saramin.co.kr/pds/united_company/logo/74306_logo.png" class="img" alt="" loading="lazy"></div>
+                        <div class="company--announcement">[SNOW]7월 체험형 인턴-2차</div>
+                        <div class="company--name">스노우(주)</div>
+                      </button>
+                      <button class="center--card--list"onclick="location.href='https://www.saramin.co.kr/zf_user/jobs/relay/view?isMypage=no&rec_idx=50907100&recommend_ids=eJxVjsENxEAIA6u5P2YxhvcVkv67uI1OWpLnyGYMrZFCXQV89KV1ScTV5hujwwGtSZdz4WBWq3hQdFS%2BVDmqgjPipOUrgq%2Fyxn95IwnMbu3rjucbwgyl2rInlbXbYG7xYAWrB3W7H2UmHI8nE9KNP1NDQCI%3D&view_type=list&gz=1&t_ref_content=major_company&t_ref=main&t_category=relay_view&relayNonce=f2fca2586477a13e3e45&immediately_apply_layer_open=n#seq=0';">
+                        <div class="company--icon"><img src="https://webpds.saramin.co.kr/pds/united_company/logo/35734_logo.gif" class="img" alt="" loading="lazy"></div>
+                        <div class="company--announcement">[kt ds]2025년 부분별<br> 경력사원 상시 채용</div>
+                        <div class="company--name">(주)케이티디에스</div>
+                      </button>
+                    </div>
+                </div>
+                <div class="right--container">
+                    <div class="right--decorate--one">
+                      <div class="right--one--one">AI 모의면접,처음이세요?</div>
+                      <div class="right--one--two">무료 체험권</div>
+                      <div class="right--one--three">슬쩍 넣어드렸어요.</div>
+                      <div class="right--one--four">AI모의면접 체험하기</div>
+                    </div>
+                    <div class="right--decorate--two">
+                      <div class="right--two--one">
+                        <div class="right--icon"><i class="fa-solid fa-book"></i></div>
+                        <div class="righ--text">Ai 자소서 코칭</div>
+                      </div>
+                      <div class="right--two--two">
+                        <div class="right--icon"><i class="fa-solid fa-calculator"></i></div>
+                        <div class="righ--text">연봉계산기</div>
+                      </div>
+                      <div class="right--two--three">
+                        <div class="right--icon"><i class="fa-solid fa-list"></i></div>
+                        <div class="righ--text">글자수세기</div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 메인 컨텐츠 -->
+    <section class="bottom--section">
+
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="inner">
+          <div class="footer--copyright">
+            Humanist(c)2025 장승원 All rights reserved.
+          </div>
+        </div>
+     </footer>
+  </body>
+
+</html>
