@@ -12,10 +12,26 @@ body {
   padding: 20px;
 }
 
-h1 {
+.tag {
   font-size: 24px;
   margin-bottom: 5px;
+  font-weight: bold;
+  padding: 10px;
 }
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+
+}
+
+.skill--icon {
+    height: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
 
 .subheading {
   color: #666;
