@@ -1,131 +1,127 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="이력서플랫폼" />
-    <meta name="description" content="이력서 목록 시안" />
-    <meta name="keywords" content="Lecture" />
-    <meta name="author" content="Seungwon Jang" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
 
-    <!-- 일반적인 fabicon 설정 -->
-    <!-- 1.  rel 속성 : <link> 태그에서 사용되며, 현재 문서와 연결된 리소스 간의 관계를 정의합니다. -->
-    <!-- 2.  xx.ico : 파비콘으로 주로 사용되는 이미지 파일 형식. -->
-    <link rel="icon" href="img/tencoding_fabicon.png" />
-    <!-- 아이폰용 fabicon 설정 -->
-    <link rel="apple-touch-icon" href="img/tencoding_fabicon.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="이력서플랫폼" />
+  <meta name="description" content="이력서 목록 시안" />
+  <meta name="keywords" content="Lecture" />
+  <meta name="author" content="Seungwon Jang" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
 
-    <!-- 인터넷 익스플러용 fabicon 설정-->
-    <link rel="short icon" type="image/x-icon" href="img/fun-coding.ico" />
+  <!-- 일반적인 fabicon 설정 -->
+  <!-- 1.  rel 속성 : <link> 태그에서 사용되며, 현재 문서와 연결된 리소스 간의 관계를 정의합니다. -->
+  <!-- 2.  xx.ico : 파비콘으로 주로 사용되는 이미지 파일 형식. -->
+  <link rel="icon" href="img/tencoding_fabicon.png" />
+  <!-- 아이폰용 fabicon 설정 -->
+  <link rel="apple-touch-icon" href="img/tencoding_fabicon.png" />
 
-    <!-- CSS Reset(1), style.css, 아이콘 폰트, 웹페이지 사용 폰트 -->
-    <link rel="stylesheet" href="css/nomalize.css" />
-    <link rel="stylesheet" href="css/showinfo.css" />
+  <!-- 인터넷 익스플러용 fabicon 설정-->
+  <link rel="short icon" type="image/x-icon" href="img/fun-coding.ico" />
 
-    <!-- 폰트는 각 사용자 PC에 해당 폰트가 설치 되어 있어야 함 -->
-    <!-- 웹 폰트는 각 사용자의 PC에 폰트가 없어도 웹 브라우저에서 폰트를 
+  <!-- CSS Reset(1), style.css, 아이콘 폰트, 웹페이지 사용 폰트 -->
+  <link rel="stylesheet" href="css/nomalize.css" />
+  <link rel="stylesheet" href="css/showinfo.css" />
+
+  <!-- 폰트는 각 사용자 PC에 해당 폰트가 설치 되어 있어야 함 -->
+  <!-- 웹 폰트는 각 사용자의 PC에 폰트가 없어도 웹 브라우저에서 폰트를 
      다운로드 받아서 웹 페이지가 표시 됨 -->
-    <!-- 첫 번째와 두 번째 <link> 태그: rel="preconnect"는 브라우저가 fonts.googleapis.com와 fonts.gstatic.com 
+  <!-- 첫 번째와 두 번째 <link> 태그: rel="preconnect"는 브라우저가 fonts.googleapis.com와 fonts.gstatic.com 
      도메인에 미리 연결을 준비하도록 하여 폰트 로딩 속도를 최적화합니다. -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;0,700;0,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-      rel="stylesheet"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;0,700;0,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet" />
 
-    <!-- 레이아웃 틀 설정 -->
-    <!-- 항상 화면을 100% 로 사용하면, 와이드 스크린에서 웹페이지가 기대와 달리 보일 수 있음 -->
-    <!-- header 에 상단 메뉴까지 넣을 예정 -->
+  <!-- 레이아웃 틀 설정 -->
+  <!-- 항상 화면을 100% 로 사용하면, 와이드 스크린에서 웹페이지가 기대와 달리 보일 수 있음 -->
+  <!-- header 에 상단 메뉴까지 넣을 예정 -->
 
-    <!-- 전체 layout 는 시멘틱 태그로 구성하고,
+  <!-- 전체 layout 는 시멘틱 태그로 구성하고,
       각 layout component 는 width를 100% 로 하되,
       해당 component 에 들어가는 요소들은 특정 가로 사이즈 이상에서는 특정 사이즈로 가운데에 정렬되도록,
       inner 클래스로 감싸주기로 함
       각 하부 요소 배치를 위해서는 각 layout 별 container 로 정의해주기로 함
     -->
-    <title>이력서 플랫폼</title>
-    <!-- 제일 위쪽 헤드 -->
-  </head>
-  <body>
-    <header>
-      <div class="inner">
-        <div class="head--container">
-          <div class="head--title"onclick="location.href='http://127.0.0.1:5501/src/mainscreen_login.html';">Humanist</div>
-          <div class="head--showinfo">
-            <div>홍길동</div>
-            <a href="http://127.0.0.1:5501/src/mypage_01.html">마이페이지</a>
-            <a href="http://127.0.0.1:5501/src/signin_01.html">로그아웃</a>
-          </div>
+  <title>이력서 플랫폼</title>
+  <!-- 제일 위쪽 헤드 -->
+</head>
+
+<body>
+  <header>
+    <div class="inner">
+      <div class="head--container">
+        <div class="head--title" onclick="location.href='mainscreen_login.html';">Humanist</div>
+        <div class="head--showinfo">
+          <div>홍길동</div>
+          <a href="mypage_01.html">마이페이지</a>
+          <a href="signin_01.html">로그아웃</a>
         </div>
       </div>
-    </header>
-    <!-- 뒤로가기 버튼과 이력서 등록글자 -->
-    <section>
-      <div class="inner">
-        <div class="section--main--container">
-          <div class="section--title--container">
-            <a href="http://127.0.0.1:5501/src/list.html">←</a>
-            <span>이력서 목록</span>
+    </div>
+  </header>
+  <!-- 뒤로가기 버튼과 이력서 등록글자 -->
+  <section>
+    <div class="inner">
+      <div class="section--main--container">
+        <div class="section--title--container">
+          <a href="list.html">←</a>
+          <span>이력서 목록</span>
+        </div>
+        <div class="section--secondcontainer">
+          <div>
+            <img src="https://picsum.photos/id/660/100/100" alt="asd" class="input--image" />
           </div>
-          <div class="section--secondcontainer">
-            <div>
-              <img src="https://picsum.photos/id/660/100/100" alt="asd" class="input--image" />
-            </div>           
-            <div class="section--list--container">
-              <div class="list--font">
-                <div class="list--font--first">
-                  <div>전체</div>
-                  <div class="list--font--color">2</div>
-                </div>
-                <a
-                  href="http://127.0.0.1:5501/src/register.html"
-                  class="list--font--second"
-                  style="color: aliceblue"
-                  >이력서 등록</a>
+          <div class="section--list--container">
+            <div class="list--font">
+              <div class="list--font--first">
+                <div>전체</div>
+                <div class="list--font--color">2</div>
               </div>
-              <div class="list--visible">
-                <div class="visible--title">
-                    <div>홍길동 이력서_2401029</div>
-                    <a>이력서 수정</a>
-                </div>
-                <div class="visible--second--title">신입</div>
-                <div class="visible--skill">
-                    <div class="vs">HTML/CSS</div>
-                    <div class="vs">JavaScript</div>
-                    <div class="vs">MySQL</div>
-                    <div class="vs">Spring</div>
-                    <div class="vs">JAVA</div>
-                </div>
+              <a href="register.html" class="list--font--second" style="color: aliceblue">이력서 등록</a>
+            </div>
+            <div class="list--visible">
+              <div class="visible--title">
+                <div>홍길동 이력서_2401029</div>
+                <a>이력서 수정</a>
               </div>
-              <div class="list--visible">
-                <div class="visible--title">
-                    <div>홍길동 이력서_2401029</div>
-                    <a>이력서 수정</a>
-                </div>
-                <div class="visible--second--title">신입</div>
-                <div class="visible--skill">
-                    <div class="vs">HTML/CSS</div>
-                    <div class="vs">JavaScript</div>
-                    <div class="vs">MySQL</div>
-                    <div class="vs">Spring</div>
-                    <div class="vs">JAVA</div>
+              <div class="visible--second--title">신입</div>
+              <div class="visible--skill">
+                <div class="vs">HTML/CSS</div>
+                <div class="vs">JavaScript</div>
+                <div class="vs">MySQL</div>
+                <div class="vs">Spring</div>
+                <div class="vs">JAVA</div>
+              </div>
+            </div>
+            <div class="list--visible">
+              <div class="visible--title">
+                <div>홍길동 이력서_2401029</div>
+                <a>이력서 수정</a>
+              </div>
+              <div class="visible--second--title">신입</div>
+              <div class="visible--skill">
+                <div class="vs">HTML/CSS</div>
+                <div class="vs">JavaScript</div>
+                <div class="vs">MySQL</div>
+                <div class="vs">Spring</div>
+                <div class="vs">JAVA</div>
+              </div>
             </div>
           </div>
         </div>
+  </section>
+  <!-- footer -->
+  <footer>
+    <div class="inner">
+      <div class="footer--copyright">
+        copyright(c)2024 장승원 All rights reserved.
       </div>
-    </section>
-    <!-- footer -->
-    <footer>
-        <div class="inner">
-          <div class="footer--copyright">
-            copyright(c)2024 장승원 All rights reserved.
-          </div>
-        </div>
-     </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
