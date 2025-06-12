@@ -45,19 +45,11 @@ a:hover {
 
 
 .outer {
-  position: absolute;
-  right: 50px;
-  margin-top: 6rem;
-  justify-content: center;
-  align-items: center;
+  position: fixed;
+  right: 7rem;
+  top: 6rem;
+
 }
-
-
-.body {
-  display: flex;
-  flex-direction: column;
-}
-
 
 header {
   width: 100%;
@@ -422,6 +414,9 @@ input:focus {
 
 .center--card--list:hover {
   box-shadow: 5px 5px 5px lightgray;
+  /* overflow: clip;
+  overflow-clip-margin: 30px; */
+
 }
 
 
@@ -440,11 +435,13 @@ input:focus {
 .right--container {
   border: 1px solid #fff;
   background-color: #fff;
+  width: 100%;
   border-radius: 20px;
 }
 
 
 .right--decorate--two {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -607,7 +604,7 @@ background-color: #f7f7f7;
 }
 
 
-@media (max-width: 1320px) {
+@media (max-width: 1548px) {
   .outer {
     display: none;
   }
@@ -683,7 +680,9 @@ background-color: #f7f7f7;
   display: none;
 }
 
-  }
+}
+
+
 
 
 
