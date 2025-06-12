@@ -44,7 +44,9 @@ header {
 }
 
 .head--title {
+    font-weight: 900px;
     font-size: 2rem;
+    color: #5d6ac0;
 }
 
 .head--buttoncontainer {

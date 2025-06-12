@@ -46,7 +46,9 @@ header {
 }
 
 .head--title {
+    font-weight: 900px;
     font-size: 2rem;
+    color: #5d6ac0;
     flex-shrink: 0
 }
 
@@ -70,6 +72,36 @@ header {
 }
 
 /* 섹션 */
+
+/* 투명섹션 */
+.outer {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.outer--inner {
+    height: 10rem;
+    width: 1300px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.outer--rightside {
+    position: fixed;
+}
+
+.outer--rightside--box {
+    margin-bottom: 0.5rem;
+}
+
 /* 상부섹션 */
 section {
     width: 100%;
