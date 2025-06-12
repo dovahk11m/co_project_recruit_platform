@@ -1,7 +1,4 @@
 
-
-
-
 * {
     padding: 0;
     margin: 0;
@@ -9,10 +6,6 @@
 }
 a {
     text-decoration: none;
-    color:none;
-}
-a:visited {
-    color:black;
 }
 
 /* 전체 부분 공통적 */
@@ -46,9 +39,14 @@ a:visited {
 }
 
 .header-left {
-    font-size: 1.6rem;
-    font-weight: 500;
+  font-weight: 900px;
+  font-size: 2rem;
+  color:#5d6ac0;
 }
+.header-left a:visited {
+    color:#6069bd;
+}
+
 .header-left :hover {
     color:#6069bd;
     cursor: pointer;
@@ -59,6 +57,10 @@ a:visited {
     display: flex;
     gap: 10px;
 }
+.header-right a:visited {
+    color: black;
+}
+
 .header-right :hover {
     color:#6069bd;
     transition: 0.2s;
