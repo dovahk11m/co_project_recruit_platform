@@ -49,6 +49,10 @@ header {
     color: #5d6ac0;
 }
 
+.head--title:hover {
+    cursor: pointer;
+}
+
 .head--buttoncontainer {
     display: flex;
     gap: 1rem;
